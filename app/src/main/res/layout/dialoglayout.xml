@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout2">
+
+        <TextView
+            android:text="Enter your 4 digit pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/OTPLabel"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:paddingBottom="20dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter pin here"
+        android:imeOptions="actionDone"
+        android:maxLength="4"
+        android:inputType="number"
+        android:layout_below="@+id/textInputLayout2"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Confirm your pin"
+        android:imeOptions="actionDone"
+        android:maxLength="4"
+        android:inputType="number"
+        android:layout_below="@+id/input"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_gravity="bottom"
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/input2"
+        android:text="SET PIN"
+        android:background="#66ff66"
+        android:textColor="#000"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

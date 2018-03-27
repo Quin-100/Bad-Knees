@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BadKnees</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_market">Market</string>
+    <string name="title_activity_payment">Payment</string>
+    <string name="title_activity_add_card">AddCard</string>
+    <string name="title_activity_dialoglayout">Dialog Layout</string>
+</resources>
